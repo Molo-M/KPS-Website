@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar {
+    text-align: right;
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    position: sticky;
+
+}
+
+.navlinks {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.navlinks:hover {
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    text-align: center;
+    background-color: rgb(37, 35, 35);
+    color: rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px 50px 20px 50px; */
+}
+
+.intro h1 {
+    color: beige;
+    font-size: 40px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.intro h3 {
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    padding: 40px;
+
+}
+
+.headshot {
+    height: 14em;
+    width: 20em;
+    margin-left: auto;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+
+.description {
+    padding-left: 10em;
+    padding-right: 5em;
+}
+
+.profile_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 19px;
+}
+
+/* footer section */
+.footer {
+    display: flex;
+    color: white;
+    background-color: rgb(18, 51, 19);
+    padding-left: 5em;
+    padding-bottom: 40px;
+    margin-top: 3em;
+}
+
+.left h2 {
+    margin-top: 20px;
+}
+
+.left p {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.right {
+    margin-left: 3em;
+}
+
+.right h2 {
+    margin-top: 20px;
+}
+
+.right p {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+#copyright_statement {
+    margin-top: auto;
+    margin-bottom: -1em;
+    font-size: 15px;
+}
+
+/* navbar width adjustment */
+@media (max-width: 970px) {
+    .navlinks {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .navlinks {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .navlinks {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+
+    .navlinks:hover {
+        background-color: darkgreen;
+    }
+}
+
+/* rest of the page adjustment */
+@media (max-width: 920px) {
+    .profile {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headshot {
+        width: 10em;
+        margin: 0;
+    }
+
+    .description {
+        padding: 0;
+        margin: 0;
+    }
+}

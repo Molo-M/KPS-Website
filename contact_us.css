@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar {
+    text-align: right;
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+
+}
+
+.navlinks {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.navlinks:hover {
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body p {
+    font-size: 20px;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.left {
+    margin-right: 6em;
+}
+
+.left h1 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.left p {
+    margin-bottom: 5px;
+}
+
+.right h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}   
+
+.right img {
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.right img:hover {
+    background-color: gray;
+    padding: 20px;
+}
+
+/* footer section */
+.footer {
+    display: flex;
+    color: white;
+    background-color: rgb(18, 51, 19);
+    padding-left: 5em;
+    padding-bottom: 40px;
+    margin-top: 3em;
+}
+
+.left h2 {
+    margin-top: 20px;
+}
+
+.left p {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.right {
+    margin-left: 3em;
+}
+
+.right h2 {
+    margin-top: 20px;
+}
+
+.right p {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+#copyright_statement {
+    margin-top: auto;
+    margin-bottom: -1em;
+    font-size: 15px;
+}
+
+/* navbar width adjustment */
+@media (max-width: 970px) {
+    .navlinks {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .navlinks {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .navlinks {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+
+    .navlinks:hover {
+        background-color: darkgreen;
+    }
+}
+
+/* size adjustment for the rest of the page */
+@media (max-width: 930px) {
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .left {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .line {
+        width: 90%;
+        height: 2px;
+        background-color: black;
+        margin-bottom: 20px;
+    }
+}
